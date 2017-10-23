@@ -22,189 +22,284 @@ array_shift($csv);
 
 <h3>Frente Amplio</h3>
 
-                                                                                            <table class="table table-bordered table-striped table-responsive">
-                                                                                              <thead>
-                                                                                                <tr>
-                                                                                                  <th>Nombre</th>
-                                                                                                  <th>Partido</th>
-                                                                                                          <th>Comunas</th>
-                                                                                                </tr>
-                                                                                              </thead>
-                                                                                              <tbody>
-                                                                                                <?php for($a = 0; $a < $total = count($csv); $a++){?>
-                                                                                                      <?php if(($csv[$a]["Lista/Pacto"])=="Independiente"){?>
-                                                                                                <tr>
-                                                                                                  <td>
-                                                                                                              <?php echo($csv[$a]["Candidato Nombre"])?>
-                                                                                                        <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
-                                                                                                        <?php echo($csv[$a]["Candidato Apellido Materno"])?>
-                                                                                                  </td>
-                                                                                                  <td><?php echo($csv[$a]["Partido Politico"])?></td>
-                                                                                                    <td><?php echo($csv[$a]["Comunas"])?></td>
-                                                                                                </tr>
-                                                                                                      <?php $frenteamplio++;?>
-                                                                                                      <?php };?>
-                                                                                                <?php };?>
-                                                                                              </tbody>
-                                                                                            </table>
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+      <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="Frente Amplio"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $frenteamplio++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
+
+<h3>Coalición Regionalista Verde</h3>
+
+<table class="table table-bordered table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Partido</th>
+                  <th>Comunas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php for($a = 0; $a < $total = count($csv); $a++){?>
+              <?php if(($csv[$a]["Lista/Pacto"])=="Coalición Regionalista Verde"){?>
+        <tr>
+          <td>
+                      <?php echo($csv[$a]["Candidato Nombre"])?>
+                <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+                <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+          </td>
+          <td><?php echo($csv[$a]["Partido Politico"])?></td>
+            <td><?php echo($csv[$a]["Comunas"])?></td>
+        </tr>
+              <?php $coalicion++;?>
+              <?php };?>
+        <?php };?>
+      </tbody>
+    </table>
+
+    <h3>Por todo Chile</h3>
+
+    <table class="table table-bordered table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Partido</th>
+                  <th>Comunas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php for($a = 0; $a < $total = count($csv); $a++){?>
+              <?php if(($csv[$a]["Lista/Pacto"])=="Por todo Chile"){?>
+        <tr>
+          <td>
+                      <?php echo($csv[$a]["Candidato Nombre"])?>
+                <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+                <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+          </td>
+          <td><?php echo($csv[$a]["Partido Politico"])?></td>
+            <td><?php echo($csv[$a]["Comunas"])?></td>
+        </tr>
+              <?php $portodo++;?>
+              <?php };?>
+        <?php };?>
+      </tbody>
+    </table>
 
 
+<h3>Independiente</h3>
 
-                                                                                              <h3>Coalición Regionalista Verde</h3>
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+              <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="Independiente"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $independiente++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
 
-                                                                                                                                                                                          <table class="table table-bordered table-striped table-responsive">
-                                                                                                                                                                                            <thead>
-                                                                                                                                                                                              <tr>
-                                                                                                                                                                                                <th>Nombre</th>
-                                                                                                                                                                                                <th>Partido</th>
-                                                                                                                                                                                                        <th>Comunas</th>
-                                                                                                                                                                                              </tr>
-                                                                                                                                                                                            </thead>
-                                                                                                                                                                                            <tbody>
-                                                                                                                                                                                              <?php for($a = 0; $a < $total = count($csv); $a++){?>
-                                                                                                                                                                                                    <?php if(($csv[$a]["Lista/Pacto"])=="Independiente"){?>
-                                                                                                                                                                                              <tr>
-                                                                                                                                                                                                <td>
-                                                                                                                                                                                                            <?php echo($csv[$a]["Candidato Nombre"])?>
-                                                                                                                                                                                                      <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
-                                                                                                                                                                                                      <?php echo($csv[$a]["Candidato Apellido Materno"])?>
-                                                                                                                                                                                                </td>
-                                                                                                                                                                                                <td><?php echo($csv[$a]["Partido Politico"])?></td>
-                                                                                                                                                                                                  <td><?php echo($csv[$a]["Comunas"])?></td>
-                                                                                                                                                                                              </tr>
-                                                                                                                                                                                                    <?php $coalicion++;?>
-                                                                                                                                                                                                    <?php };?>
-                                                                                                                                                                                              <?php };?>
-                                                                                                                                                                                            </tbody>
-                                                                                                                                                                                          </table>
+<h3>Trabajadores revolucionarios</h3>
 
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+              <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="Trabajadores revolucionarios"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $revolucionarios++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
 
+<h3>Convergencia Democrática</h3>
 
-                                                                                                                                                                                            <h3>Por todo Chile</h3>
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+              <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="Convergencia Democrática"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $convergencia++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
 
-                                                                                                                                                                                                                                                                                        <table class="table table-bordered table-striped table-responsive">
-                                                                                                                                                                                                                                                                                          <thead>
-                                                                                                                                                                                                                                                                                            <tr>
-                                                                                                                                                                                                                                                                                              <th>Nombre</th>
-                                                                                                                                                                                                                                                                                              <th>Partido</th>
-                                                                                                                                                                                                                                                                                                      <th>Comunas</th>
-                                                                                                                                                                                                                                                                                            </tr>
-                                                                                                                                                                                                                                                                                          </thead>
-                                                                                                                                                                                                                                                                                          <tbody>
-                                                                                                                                                                                                                                                                                            <?php for($a = 0; $a < $total = count($csv); $a++){?>
-                                                                                                                                                                                                                                                                                                  <?php if(($csv[$a]["Lista/Pacto"])=="Independiente"){?>
-                                                                                                                                                                                                                                                                                            <tr>
-                                                                                                                                                                                                                                                                                              <td>
-                                                                                                                                                                                                                                                                                                          <?php echo($csv[$a]["Candidato Nombre"])?>
-                                                                                                                                                                                                                                                                                                    <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
-                                                                                                                                                                                                                                                                                                    <?php echo($csv[$a]["Candidato Apellido Materno"])?>
-                                                                                                                                                                                                                                                                                              </td>
-                                                                                                                                                                                                                                                                                              <td><?php echo($csv[$a]["Partido Politico"])?></td>
-                                                                                                                                                                                                                                                                                                <td><?php echo($csv[$a]["Comunas"])?></td>
-                                                                                                                                                                                                                                                                                            </tr>
-                                                                                                                                                                                                                                                                                                  <?php $portodo++;?>
-                                                                                                                                                                                                                                                                                                  <?php };?>
-                                                                                                                                                                                                                                                                                            <?php };?>
-                                                                                                                                                                                                                                                                                          </tbody>
-                                                                                                                                                                                                                                                                                        </table>
+<h3>Unión Patriótica</h3>
 
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+              <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="Unión Patriótica"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $union++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
 
-                                                                                                                                                                                                                                                                                          <hr>
+<h3>Sumemos</h3>
 
-                                                                                                                                                                                                                                                                                          <h3>Independiente</h3>
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+              <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="Sumemos"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $sumemos++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
 
-                                                                                                                                                                                                                                                                                                                                                                                      <table class="table table-bordered table-striped table-responsive">
-                                                                                                                                                                                                                                                                                                                                                                                        <thead>
-                                                                                                                                                                                                                                                                                                                                                                                          <tr>
-                                                                                                                                                                                                                                                                                                                                                                                            <th>Nombre</th>
-                                                                                                                                                                                                                                                                                                                                                                                            <th>Partido</th>
-                                                                                                                                                                                                                                                                                                                                                                                                    <th>Comunas</th>
-                                                                                                                                                                                                                                                                                                                                                                                          </tr>
-                                                                                                                                                                                                                                                                                                                                                                                        </thead>
-                                                                                                                                                                                                                                                                                                                                                                                        <tbody>
-                                                                                                                                                                                                                                                                                                                                                                                          <?php for($a = 0; $a < $total = count($csv); $a++){?>
-                                                                                                                                                                                                                                                                                                                                                                                                <?php if(($csv[$a]["Lista/Pacto"])=="Independiente"){?>
-                                                                                                                                                                                                                                                                                                                                                                                          <tr>
-                                                                                                                                                                                                                                                                                                                                                                                            <td>
-                                                                                                                                                                                                                                                                                                                                                                                                        <?php echo($csv[$a]["Candidato Nombre"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                  <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                  <?php echo($csv[$a]["Candidato Apellido Materno"])?>
-                                                                                                                                                                                                                                                                                                                                                                                            </td>
-                                                                                                                                                                                                                                                                                                                                                                                            <td><?php echo($csv[$a]["Partido Politico"])?></td>
-                                                                                                                                                                                                                                                                                                                                                                                              <td><?php echo($csv[$a]["Comunas"])?></td>
-                                                                                                                                                                                                                                                                                                                                                                                          </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                <?php $independiente++;?>
-                                                                                                                                                                                                                                                                                                                                                                                                <?php };?>
-                                                                                                                                                                                                                                                                                                                                                                                          <?php };?>
-                                                                                                                                                                                                                                                                                                                                                                                        </tbody>
-                                                                                                                                                                                                                                                                                                                                                                                      </table>
+<h3>La fuerza de la Mayoría</h3>
 
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+              <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="La fuerza de la Mayoría"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $lafuerza++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
 
+<h3>Chile Vamos</h3>
 
-                                                                                                                                                                                                                                                                                                                                                                                        <hr>
-
-                                                                                                                                                                                                                                                                                                                                                                                        <h3>Trabajadores revolucionarios</h3>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <table class="table table-bordered table-striped table-responsive">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <thead>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <th>Nombre</th>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <th>Partido</th>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <th>Comunas</th>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </thead>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <tbody>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <?php for($a = 0; $a < $total = count($csv); $a++){?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <?php if(($csv[$a]["Lista/Pacto"])=="Independiente"){?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <?php echo($csv[$a]["Candidato Nombre"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <?php echo($csv[$a]["Candidato Apellido Materno"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <td><?php echo($csv[$a]["Partido Politico"])?></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <td><?php echo($csv[$a]["Comunas"])?></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <?php $revolucionarios++;?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <?php };?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <?php };?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </tbody>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </table>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <hr>
-
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <table class="table table-bordered table-striped table-responsive">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <thead>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <th>Nombre</th>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <th>Partido</th>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <th>Comunas</th>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </thead>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <tbody>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <?php for($a = 0; $a < $total = count($csv); $a++){?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <?php if(($csv[$a]["Lista/Pacto"])=="Independiente"){?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <?php echo($csv[$a]["Candidato Nombre"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <?php echo($csv[$a]["Candidato Apellido Materno"])?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <td><?php echo($csv[$a]["Partido Politico"])?></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <td><?php echo($csv[$a]["Comunas"])?></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <?php $independiente++;?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <?php };?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <?php };?>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tbody>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </table>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <hr>
-
-
-
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+              <th>Comunas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for($a = 0; $a < $total = count($csv); $a++){?>
+          <?php if(($csv[$a]["Lista/Pacto"])=="Chile Vamos"){?>
+    <tr>
+      <td>
+                  <?php echo($csv[$a]["Candidato Nombre"])?>
+            <?php echo($csv[$a]["Candidato Apellido Paterno"])?>
+            <?php echo($csv[$a]["Candidato Apellido Materno"])?>
+      </td>
+      <td><?php echo($csv[$a]["Partido Politico"])?></td>
+        <td><?php echo($csv[$a]["Comunas"])?></td>
+    </tr>
+          <?php $vamos++;?>
+          <?php };?>
+    <?php };?>
+  </tbody>
+</table>
 
 
 <hr id="numeros">
@@ -225,12 +320,7 @@ array_shift($csv);
 
 </div>
 
-<hr id="print_r">
 
-<h3>print_r</h3>
-
-
-<pre><code><?php print_r($csv);?></code></pre>
 
 </div>
 </div>
