@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="…">
     <meta name="author" content="…">
-    <title>ELecciones 2017</title>
+    <title>Elecciones 2017</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fix.css">
   </head>
@@ -31,13 +31,13 @@
     <?php if((basename($_SERVER['PHP_SELF']))=='index.php'){?>
     <div class="container">
       <div class="jumbotron">
-        <h1>ELecciones 2017</h1>
+        <h1>Elecciones 2017</h1>
           </div>
     </div>
     <?php } else {;?>
     <div class="container">
       <div class="jumbotron">
-        <h1>ELecciones 2017</h1>
+        <h1>Elecciones 2017</h1>
       </div>
     </div>
 
