@@ -10,8 +10,6 @@ array_walk($csv, function(&$a) use ($csv) {$a = array_combine($csv[0], $a);});
 array_shift($csv);
 ?>
 
-<pre><code><?php print_r($csv);?></code></pre>
-
 
 
       <table class="table table-bordered table-striped table-responsive">
